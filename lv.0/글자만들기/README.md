@@ -6,8 +6,8 @@
  4. 모두 제거된 리스트 합치기 -> join
 
 ## 쓰인 코드
-  #### split()
+  ```split()```
 
-  #### splice()
+  ```splice()```
 
-  #### sort
+  ```sort```
