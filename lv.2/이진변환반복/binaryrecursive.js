@@ -1,5 +1,4 @@
-//case 1. recursive function
-
+//case 1-a. recursive function (used 1 funtion)
 function solution(s, countRun, countZero) {
     let split0 = s.split("0").join('');
     countZero += (s.length - split0.length);
@@ -10,6 +9,26 @@ function solution(s, countRun, countZero) {
     } else {
         return [countRun, countZero]
     }
+}
+
+
+//case 1-b. recursive function (used 2 function)
+function solution (s) {
+    function recursive(s, countRun, countZero) {
+        let splitZero = s.split('0').join('');
+        
+        let currentCount = s.length - splitZero.length;
+        countZero += currentCount;
+        
+        let binary = splitZero.length.toString(2);
+        countRun++
+        if (binary !== "1") {
+            return recursive(binary, countRun, countZero);
+        } else {
+            return [countRun, countZero];
+        }
+    }
+    return recursive(s, 0, 0);
 }
 
 
