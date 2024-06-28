@@ -14,5 +14,5 @@
     - 함수 내부에서 초기화 한다면, 재귀함수가 불러와 질 때마다 초기화 되므로 아래와 같이 초기화 한다.
     - function solution (s, countRun = 0, countZero = 0) {}
   - 내부함수
-    - function solution (s) {funtion solution (s, countRun, countZero) {}} 함수 사용 시, 인자값을 초기화 해줄 필요 없음.
-    - 
+    - function solution (s) {funtion recursive (s, countRun, countZero) {}} 함수 사용 시, 함수 선언 시 인자값 초기화 불필요
+    - 외부함수 내부함수 정의 후 제일 마지막에 return recursive(s, 0, 0) 와 같은 형태로 초기화 해주면 누적값 반환
