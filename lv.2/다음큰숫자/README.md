@@ -1,4 +1,4 @@
-##pseudo code
+## pseudo code
 ### logic
 1. 주어진 숫자를 2진수로 바꾼다.
 2. 2진수를 split('0').join('')을 통해 1이 나열된 문자열로 바꾼다.
