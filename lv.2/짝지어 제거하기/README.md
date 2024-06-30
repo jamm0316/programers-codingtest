@@ -7,7 +7,7 @@
 3. if s = [] return 1
   - 비어있지 않다면 return 0
 
-For this reason, time complexity = O(n^2)
+**For this reason, time complexity = O(n^2)**
 
 ### case 2. time complexity O(n)
 1. stack box를 만들어 놓는다.
@@ -16,4 +16,4 @@ For this reason, time complexity = O(n^2)
   - 그 외, char를 stack box에 push
 3. stack box.length === 0 이면 1, 아니면 0 반환
 
-For this reason, time complexity = O(n)
+**For this reason, time complexity = O(n)**
