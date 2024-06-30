@@ -9,6 +9,8 @@
 
 **For this reason, time complexity = O(n^2)**
 
+---
+
 ### case 2. time complexity O(n)
 1. stack box를 만들어 놓는다.
 2. s를 char단위로 순회한다. (O(n))
