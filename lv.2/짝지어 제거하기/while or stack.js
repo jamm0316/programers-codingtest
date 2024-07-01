@@ -23,7 +23,7 @@ function solution(s) {
 }
 
 
-// case 2. while -> O(n)
+// case 2. for roof -> O(n)
 function solution(s) {
     // init stack
     let stack = [];
