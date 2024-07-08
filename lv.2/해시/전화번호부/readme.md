@@ -11,5 +11,5 @@
 
 ## 주의사항
 > [!warning]
-> [삼항조건연산자](https://github.com/jamm0316/programers-codingtest/wiki/%EC%82%BC%ED%95%AD-%EC%A1%B0%EA%B1%B4-%EC%97%B0%EC%82%B0%EC%9E%90(ternary-operator))(ternary operator)를 쓰지 않는 이유  
+> [삼항조건연산자(ternary operator)](https://github.com/jamm0316/programers-codingtest/wiki/%EC%82%BC%ED%95%AD-%EC%A1%B0%EA%B1%B4-%EC%97%B0%EC%82%B0%EC%9E%90(ternary-operator))를 쓰지 않는 이유  
 > function은 return값이 반환되면 실행을 종료하므로, 위 같은 경우 for 구문 전체를 순회하지 못하고 함수가 종료된다. 
