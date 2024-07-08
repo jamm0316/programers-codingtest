@@ -30,3 +30,4 @@
 
 ## 4. 적용예시
 1. [포켓몬](https://github.com/jamm0316/programers-codingtest/blob/main/lv.1/%ED%95%B4%EC%8B%9C/pokemon.js) : 서로 중복되지 않게, 가장 많은 포켓몬 고르기
+2. [완주하지 못한 선수]() : 해시테이블에서 값 더하고 빼기
