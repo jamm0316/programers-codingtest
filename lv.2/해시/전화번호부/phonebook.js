@@ -1,3 +1,4 @@
+// case 1. Hash Table
 function solution(phoneBook) {
     // Store number in a hash table
     const phoneHash = {};
@@ -18,4 +19,19 @@ function solution(phoneBook) {
     }
     
     return true;
+}
+
+
+// case 2. startsWith
+function solution(phoneBook) {
+    //Sort the phonebook
+    phoneBook.sort();
+
+    //Compare adjacent phone number
+    for (let i = 0; i < phoneBook.length - 1; i++) {
+        if (phoneBook[i + 1].startsWith(phoneBook[i])) {
+            return false
+        }
+    }
+    return true
 }
