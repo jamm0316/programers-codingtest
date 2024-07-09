@@ -1,5 +1,5 @@
 //case 1. hash table - 1 used Map, forEach
-function solution (clothes)
+function solution (clothes) {
     const hashTable = new Map;
 
     clothes.forEach(([name, kind]) => {
@@ -16,7 +16,8 @@ function solution (clothes)
     });
 
     return allCombination - 1;
-            
+}
+
 
 // case 2. hash table - 2 used for, if
 function solution(clothes) {
