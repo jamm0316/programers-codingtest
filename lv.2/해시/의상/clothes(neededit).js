@@ -6,32 +6,29 @@ function solution (clothes)
 
 
 // case 2. hash table - 2
-function solution (clothes) {
-    const hashTable = {};
-    let clothesType = [];
-    
-    // Constructing a hashTable
+function solution(clothes) {
+    const hash_table = {};
+    let category = []
+    // construct hash_table
     for (let i = 0; i < clothes.length; i++) {
-        if (clothes[i][1] in hashTable) {
-            hashTable[clothes[i][1]] += 1;
+        if (clothes[i][1] in hash_table) {
+            hash_table[clothes[i][1]] += 1
         } else {
-            hashTable[clothes[i][1]] = 1;
-            clothesType.push(clothes[i][1]);
+            hash_table[clothes[i][1]] = 1
+            category.push(clothes[i][1])
         }
     }
     
-    // Find the number of all cases
-    let takeOne = 0;
-    let takeMultiply = 1;
-    let allCases = 0;
-    for (let type of clothesType) {
-        takeOne += hashTable[type] + 1;
-        takeMultiply *= (hashTable[type] + 1;)
+    // check all cases
+    let allCases = 1
+    for (let tag of category) {
+        allCases *= (hash_table[tag] + 1)  // add case of nothing(+1)
     }
-    if (clothesType.length === 1) {
-        return allCases = takeOne - 1;
+    
+    
+    if (category.length === 1) {
+        return clothes.length
     } else {
-        return allCases = takeMultiply - 1;
-    }
-    return allCases;
+        return allCases - 1  // subtract all nothing
+        }
 }
