@@ -1,11 +1,24 @@
-//case 1. hash table - 1
+//case 1. hash table - 1 used Map, forEach
 function solution (clothes)
-    const hashTable = {};
+    const hashTable = new Map;
 
-    
+    clothes.forEach(([name, kind]) => {
+        if (hashTable.has(kind)) {
+            hashTable.set(kind, hashTable.get(kind) + 1);
+        } else {
+            hashTable.set(kind, 1);
+        }
+    });
 
+    let allCombination = 1
+    hashTable.forEach((count, kind) => {
+        allCombination *= (count + 1);
+    });
 
-// case 2. hash table - 2
+    return allCombination - 1;
+            
+
+// case 2. hash table - 2 used for, if
 function solution(clothes) {
     const hash_table = {};
     let category = []
@@ -25,10 +38,5 @@ function solution(clothes) {
         allCases *= (hash_table[tag] + 1)  // add case of nothing(+1)
     }
     
-    
-    if (category.length === 1) {
-        return clothes.length
-    } else {
-        return allCases - 1  // subtract all nothing
-        }
+    return allCases - 1  // subtract all nothing
 }
