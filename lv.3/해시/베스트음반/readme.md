@@ -1,5 +1,5 @@
 ## 풀이전략
-1. result => [중첩 해시 테이블]()을 만들어 인덱스를 반환한다.
+1. result => [중첩 해시 테이블](https://github.com/jamm0316/programers-codingtest/wiki/%EC%A4%91%EC%B2%A9-%ED%95%B4%EC%8B%9C-%ED%85%8C%EC%9D%B4%EB%B8%94)을 만들어 인덱스를 반환한다.
 2. 모든 category의 합을 나타내는 해시테이블 작성
 3. category에 따라 인덱스와 각각의 play횟수를 가진 해시테이블 작성
 
