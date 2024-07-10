@@ -4,11 +4,11 @@
 3. category에 따라 인덱스와 각각의 play횟수를 가진 해시테이블 작성
 
 ## 해시테이블 예시
+```javascript
 hash_sumPlay = {
     cassic: 1300
     pop : 2500
-    }
-```javascript
+    };
 hash_Songlist = {  
     cassic: [  
     { id: 0, plays: 500 },  
@@ -18,7 +18,7 @@ hash_Songlist = {
     pop : [  
     { id: 1, plays: 600 },  
     { id: 4, plays: 2500}  
-    ]}  
+    ]};
 ```
 ## pseudo code
 #### step 1. 해시 테이블 만들기
