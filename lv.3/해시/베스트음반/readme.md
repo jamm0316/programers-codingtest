@@ -8,18 +8,18 @@ hash_sumPlay = {
     cassic: 1300
     pop : 2500
     }
-
-hash_Songlist = {
-    cassic: [
-    { id: 0, plays: 500 },
-    { id: 2, plays: 150 }.
-    { id: 3, plays: 800 }
-    ]
-    pop : [
-    { id: 1, plays: 600 },
-    { id: 4, plays: 2500}
-    ]}
-
+```javascript
+hash_Songlist = {  
+    cassic: [  
+    { id: 0, plays: 500 },  
+    { id: 2, plays: 150 }.  
+    { id: 3, plays: 800 }  
+    ]  
+    pop : [  
+    { id: 1, plays: 600 },  
+    { id: 4, plays: 2500}  
+    ]}  
+```
 ## pseudo code
 #### step 1. 해시 테이블 만들기
   - 장르별 플레이 타임의 합 테이블(해시 테이블)
